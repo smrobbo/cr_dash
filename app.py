@@ -409,7 +409,8 @@ def run():
                     use_container_width=True,
                     column_config={
                         "sfdc": st.column_config.LinkColumn(display_text="go")
-                    }
+                    },
+                    hide_index=True,
                 )
 
             opp_seasons = lim_opps.groupby('created_month').size().to_frame(name='Opportunities Created')
