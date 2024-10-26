@@ -41,6 +41,7 @@ def run():
     df.set_index("label", inplace=True)
 
     st.write(f"# CR Sales Dash")
+    st.markdown('[Download opportunities from SFDC.](https://carbonrobotics.lightning.force.com/lightning/r/Report/00OVN000001Nx212AC/view?queryScope=userFolders) (Export "Details Only" as .xlsx)')
     opps_upload = st.file_uploader("Upload Opportunities", type="xlsx")
 
     process = None
